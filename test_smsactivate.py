@@ -29,6 +29,8 @@ class SmsActivateTest(unittest.TestCase):
         self.assertEqual(smsactivate.get_number('bad_api_key'), 'BAD_KEY')
         self.assertEqual(smsactivate.get_status('bad_api_key', 'bad_id'), 'BAD_KEY')
 
+    def test_bad_api_key(self):
+        self.assertEqual(smsactivate.get_number('bad_api_key'), 'BAD_KEY')
 
 if __name__ == '__main__':
     unittest.main()
