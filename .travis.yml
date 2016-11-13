@@ -8,7 +8,7 @@ python:
   - "pypy"
 
 install:
-  - pip install requests 'coverage<4' coveralls --use-mirrors
+  - pip install requests 'coverage<4' coveralls
 
 script: coverage run setup.py test
 
